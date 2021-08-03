@@ -19,7 +19,7 @@ export const App = () => {
     setColor( colors[ Math.floor( Math.random()*colors.length ) ] )
   }
   return (
-    <div className={`App flex justify-center items-center w-screen h-screen bg-${color}-300`}>
+    <div className={`App flex w-screen h-screen bg-${color}-300`}>
       <Quote color={color} changeColor={changeColor}/>
     </div>
   )

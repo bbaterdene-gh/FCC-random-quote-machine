@@ -22,7 +22,7 @@ export const Quote = (props) => {
   }, [])
 
   return (
-    <div id="quote-box" className="w-2/5 bg-white rounded px-14 py-8">
+    <div id="quote-box" className="w-2/5 bg-white rounded px-14 py-8 m-auto min-w-96">
       <blockquote id="text" className={`text-3xl text-center text-${props.color}-400`}>
         <FaQuoteLeft className="inline mr-3 mb-2"/>
         <span>{quote.quote}</span>
