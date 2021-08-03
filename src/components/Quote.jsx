@@ -29,10 +29,10 @@ export const Quote = (props) => {
       </blockquote>
       <div id="author" className={`text-right pt-3 text-${props.color}-400 font-light`}>- {quote.author}</div>
       <div className="flex mt-4">
-        <a href="https://twitter.com/intent/tweet" id="tweet-quote" target="_blank" rel="noreferrer">
+        <a href={`https://twitter.com/intent/tweet?text=${quote.quote}`} id="tweet-quote" target="_blank" rel="noreferrer">
           <FaTwitter className={`h-full w-full bg-${props.color}-400 px-3 rounded text-white`}/>
         </a>
-        <a href="https://twitter.com/intent/tweet" id="tumblr-quote" target="_blank" rel="noreferrer"
+        <a href={`https://twitter.com/intent/tweet?text=${quote.quote}`} id="tumblr-quote" target="_blank" rel="noreferrer"
         className="ml-2">
           <FaTumblr className={`h-full w-full bg-${props.color}-400 px-3 rounded text-white text-xs`}/>
         </a>
